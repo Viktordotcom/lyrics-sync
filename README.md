@@ -8,12 +8,12 @@ This project aims to build a lyrics-to-audio alignment system that can synchroni
 
 
 ### Installation
-clone repo 
-cd to repo
-conda create -n lsync-windows python=3.9
-conda activate lsync-windows 
+1. clone repo: git clone https://github.com/Viktordotcom/lyrics-sync.git
+2. cd to repo: cd lyrics-sync
+3. conda create -n lsync-windows python=3.9
+4. conda activate lsync-windows 
 
-pip install -r requirements.txt
+5. pip install -r requirements.txt
 
 ### Usage
 
