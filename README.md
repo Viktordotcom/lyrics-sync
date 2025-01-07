@@ -1,4 +1,4 @@
-# Lyrics Sync (lsync)
+# Lyrics Sync (lsync) compatible with Windows OS
 
 This project aims to build a lyrics-to-audio alignment system that can synchronize the audio of a polyphonic song with its lyrics and produce time-aligned lyrics with word-level onset and offset as a `.lrc` file. A deep-learning-based system is developed to approach the problem in three steps, which include separating the vocals, recognizing the singing vocals, and performing forced alignment. For singing vocals recognition, transfer learning is utilized to apply knowledge obtained from the speech domain to the singing domain.
 
@@ -8,20 +8,18 @@ This project aims to build a lyrics-to-audio alignment system that can synchroni
 
 
 ### Installation
+clone repo 
+cd to repo
+conda create -n lsync-windows python=3.9
+conda activate lsync-windows 
 
-```shell
-conda env update -f environment.yml
-conda activate lsync
-```
+pip install -r requirements.txt
 
 ### Usage
 
-```python
-from lsync import LyricsSync
-
-lsync = LyricsSync()
-words, lrc = lsync.sync(audio_path, lyrics_path)
-```
+1. Place lyrics in lyrics/ directory
+2. Place song files in songs/ directory (make sure they are the same filename as lyric files)
+3. python batch_align_songs.py
 
 #### Demo
 

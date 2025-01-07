@@ -134,3 +134,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+lyrics/
+songs/
+models/
+output/
+lsync_new/
+clean_lrc.py
